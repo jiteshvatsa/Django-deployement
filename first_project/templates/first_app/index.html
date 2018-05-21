@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First Django App</title>
+    <script src="{% static "js/city.js"%}"></script>
+    <link rel="stylesheet" href="{% static "css/mystyle.css"%}"/>
+  </head>
+  <body>
+    <h1>OSRAM </h1>
+    {{ insert_me }}
+    <center>
+    <b>
+    <input type="button" value="Click to get Random City Name!" onclick="Randomizer();">
+    <b>
+    <p id="text"></p>
+    </center>
+    <h2>This is the picture I Clicked!</h2>
+    <img id="i1" src="{% static "images/pic.jpg" %}" alt="Oops! Something went wrong.">
+  </body>
+</html>
